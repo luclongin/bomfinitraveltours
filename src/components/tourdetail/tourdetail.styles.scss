@@ -1,0 +1,83 @@
+html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+}
+
+.black {
+      color: black !important;
+}
+
+.tourdetail-cover-container {
+      width: 100%;
+      background-position: center;
+      background-color: white;
+      background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png");
+      color: black;
+      padding-bottom: 50px;
+      border-bottom: 1px solid rgb(215, 212, 212);
+}
+
+.bold {
+      font-weight: bold;
+}
+
+.tourdetail-title p {
+      font-size: 1.5em;
+      margin: 0;
+      margin-top: -10px;
+}
+
+.tourdetail-title h1 {
+      font-size: 3.5em;
+}
+
+.tourdetail-title-col {
+      padding: 120px 0 10px 0;
+      border-bottom: 1px solid rgb(215, 212, 212);
+      font-family: 'Libre Baskerville', serif;
+}
+
+.tourdetail-content-container {
+      padding: 20px 0;
+      font-family: 'Raleway';
+}
+
+.tourcarousel-container {
+      margin: 20px auto 0 auto;
+      display: block;
+}
+
+.tourdetail-content-container-row {
+      margin-top: 20px;
+      ul, ol {
+            margin-top: 20px;
+      }
+
+      ol > li::marker {
+            font-weight: bold;
+          }
+
+      h2 {
+            font-size: 2.2em;
+            font-weight: bold;
+      }
+}
+
+.tourdetail-content-container-row-programme {
+      margin-bottom: 40px;
+      padding: 0 0 40px 0;
+      border-bottom: 1px solid rgb(215, 212, 212);
+}
+
+.noliststyle {
+      list-style: none !important;
+      margin-bottom: 10px;
+}
+
+.programadeldia {
+      padding: 0;
+      position: relative;
+      left: -18px;
+      top: -25px;
+}

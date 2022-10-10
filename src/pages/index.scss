@@ -1,0 +1,86 @@
+body {
+      font-family: 'Libre Baskerville', serif;
+}
+
+html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+}
+
+.landing-page-container {
+      color: black;
+      background-color: #f4f4f4;
+      font-family: 'Libre Baskerville', serif;
+}
+
+.homepage-main-cover-container {
+      width: 100%;
+      height: 100vh;
+      background-image: url('../images/homepage.png');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding: 0;
+}
+
+.homepage-main-cover h1 {
+      font-size: 2.2em;
+      font-weight: normal;
+      margin: 0;
+}
+
+.homepage-main-tagline h1 span {
+      font-weight: bold;
+}
+
+.homepage-main-cover h2 {
+      font-size: 1.5em;
+      font-weight: normal;
+}
+
+.homepage-main-tagline {
+      color: black;
+      text-align: left;
+      margin-right: 120px;
+      position: absolute;
+      top: 61%;
+      right: 30px;
+}
+
+.homepage-main-footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+}
+
+.homepage-main-footer a {
+      text-decoration: none;
+      color: black;
+}
+
+.homepage-main-footer-icon {
+      width: 12px;
+      margin-left: 5px;
+}
+
+.what-we-offer-text  {
+      font-size: 1.5em;
+      margin: 50px 0 30px 0;
+      text-align: center;
+      font-family: 'Libre Baskerville', serif;
+}
+
+.tourcards-container {
+      background-image: url('../images/texture.png');
+      width: 100%;
+      height: auto;
+      margin-bottom: 100px;
+      font-family: 'Raleway', sans-serif;
+}
+
+.tourcard-row {
+      padding: 25px;
+}
+

@@ -1,0 +1,51 @@
+.tourcard-container {
+      border-style: none;
+      --bs-card-inner-border-radius: 0px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.tourcard-image {
+      height: 310px;
+      width: auto;
+}
+
+.tourcard-content {
+      padding: 25px 30px 0 30px;
+}
+
+.tourcard-title {
+      font-size: 1.4em;
+      font-family: 'Libre Baskerville', serif;
+}
+
+.tourcard-price {
+      float: right;
+      color: #00afb9;
+      font-family: 'Raleway', sans-serif;
+}
+
+.tourcard-description {
+      padding: 10px 0 30px 0;
+      font-size: 0.9em;
+}
+
+.tourcard-footer {
+      background-color: white;
+      padding: 20px 0 20px 15px;
+}
+
+.tourcard-footer button {
+      background-color: #adb5bd;
+      border: none;
+      padding: 8px;
+}
+
+.tourcard-footer button {
+      --bs-btn-hover-bg: #00afb9;
+}
+
+.tourcard-footer button a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+}

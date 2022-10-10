@@ -1,0 +1,62 @@
+.navigation-container {
+      color: white;
+      font-family: 'Libre Baskerville', serif;
+}
+
+.breadcrumb-item-main a {
+      color: black;
+}
+
+.hidden {
+      display: none;
+}
+
+.white {
+      color: white !important;
+      &::before {
+            color: white !important;
+      }
+      a {
+            color: white !important;
+      }
+}
+
+.breadcrumb {
+      position: relative;
+      top: 10px;
+      left: 30px;
+      color: black;
+}
+
+.logo img {
+      width: 120px;
+      height: auto;
+      margin: 30px 0 0 40px;
+}
+
+.navigation-container p {
+      position: absolute;
+      top: 30%;
+      right: 100px;
+      font-size: 2em;
+}
+
+
+.whatsapp-icon {
+      position: relative;
+      top: 3px;
+}
+
+.navigation-container p span {
+      margin-left: 10px;
+}
+
+.scrolled {
+      background-color: rgb(0,0,0,0.7);
+      color: white;
+}
+
+.scrolled-logo img {
+      width: 80px;
+      margin: 5px 0 0 30px;
+}
