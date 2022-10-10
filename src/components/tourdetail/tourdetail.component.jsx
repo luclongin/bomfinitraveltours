@@ -2,7 +2,6 @@ import React from "react";
 import Navigation from "../navigation/navigation.components";
 import { Helmet } from "react-helmet";
 import './tourdetail.styles.scss';
-import tour1dia from '../../images/tour1dia.jpeg';
 import { Container, Row , Col} from "react-bootstrap";
 import tour1diaContent from "../../tours";
 import Footer from "../footer/footer.component";

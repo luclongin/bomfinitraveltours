@@ -2,8 +2,6 @@ import React from "react";
 import Logo from '../../images/logo.jpeg';
 import { Link } from "gatsby";
 import './navigation.styles.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { useState, useEffect } from "react";
 import Navbar from 'react-bootstrap/Navbar';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';

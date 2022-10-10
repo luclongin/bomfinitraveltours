@@ -7,7 +7,6 @@ import Logo from '../../images/logo.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
-
 const Footer = () => {
       return(
             <Container fluid className="homepage-footer">
