@@ -79,12 +79,13 @@ const TourDetail = ({specificTourContent, tourTitle}) => {
                         <Row className="tourdetail-content-container-row-programme tourdetail-content-container-row justify-content-md-center">  
                               <Col lg={10} className="d-flex">
                                     <ol className="tourdetail-content-container-ol">
-                                    <h2 className="programadeldia">Programa {typeof(specificTourContent.programme) != "undefined" ? "del día" : "" }</h2>
+                                    <h2 className="programadeldia">Programa{typeof(specificTourContent.programme) != "undefined" ? " del día" : "" }<span className="programaasterisk">*</span></h2>
                                           {         
                                                 displayTourProgramme(specificTourContent)
                                           }
                                     </ol>
                               </Col>
+                              {typeof(specificTourContent.programme) == "undefined" ? <p className="sepeudesugerir">(*) SE PUEDE SUGERIR CAMBIOS EN EL ITINERARIO</p> : ""}
                         </Row>
                         <Row className="second-row justify-content-md-center tourdetail-content-container-row tourdetail-content-container-row-programme">
                               <Col lg={5}>
