@@ -84,7 +84,7 @@ html, body {
       font-size: 2em;
       font-weight: normal;
       margin: 0 0 0 -15px;
-      padding-bottom: 10px;
+      padding: 0 0 10px 20px;
 }
 
 .noliststyle {
@@ -94,7 +94,7 @@ html, body {
 
 .programadeldia {
       margin: 0;
-      padding: 10px 0;
+      padding: 10px 0 10px 10px;
       position: relative;
       left: -15px;
       font-size: 2.5em;
@@ -103,7 +103,7 @@ html, body {
 .tourdetail-content-container-ol {
       width: 100%;
       margin-left: 0;
-      padding-left: 0;
+      padding-left: 10px;
 }
 
 .second-row, .third-row {
@@ -112,6 +112,6 @@ html, body {
 
 .tourdetail-content-included-or-not {
       margin-left: 0;
-      padding-left: 0;
+      padding-left: 10px;
 }
 
