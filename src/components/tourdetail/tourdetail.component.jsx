@@ -2,9 +2,9 @@ import React, { Fragment } from "react";
 import Navigation from "../navigation/navigation.components";
 import { Helmet } from "react-helmet";
 import './tourdetail.styles.scss';
-import { Container, Row , Col} from "react-bootstrap";
-import toursContent from "../../tours";
-import Footer from "../footer/footer.component";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';import Footer from "../footer/footer.component";
 import ControlledCarousel from "../carousel/carousel.components";
 import WhatsappIcon from "../whatsappIcon/whatsappIcon.component";
 
