@@ -15,9 +15,11 @@ const TourDetail = ({specificTourContent, tourTitle}) => {
                   return (                        
                         <Col md={6} lg={6} className="programmeActivity-col">
                         {dayNumber == 0 ? <h3></h3> : <h3>Día {dayNumber}</h3>}
+                              <ol className="tourdetail-content-container-ol">
                               {programme.map((activity) => {
                                     return(<li>{activity}</li>)
                               })}
+                              </ol>
                         </Col>
                   );
             }
@@ -87,7 +89,7 @@ const TourDetail = ({specificTourContent, tourTitle}) => {
                         <Row className="second-row justify-content-md-center tourdetail-content-container-row tourdetail-content-container-row-programme">
                               <Col lg={5}>
                               <h3>Lo que ofrecemos</h3>
-                                    <ul className="tourdetail-content-included">
+                                    <ul className="tourdetail-content-included-or-not">
                                           <li className="noliststyle">
                                                 <span className="bold">Hora de salida:</span> {specificTourContent.horarios.salida}
                                           </li>
@@ -105,7 +107,7 @@ const TourDetail = ({specificTourContent, tourTitle}) => {
                               </Col>
                               <Col lg={5}>
                                     <h3>Lo que no incluye</h3>
-                                    <ul>
+                                    <ul className="tourdetail-content-included-or-not">
                                     {
                                           specificTourContent.not_included.map((content) => {
                                                 return(
@@ -119,7 +121,7 @@ const TourDetail = ({specificTourContent, tourTitle}) => {
                         <Row className="third-row justify-content-md-center tourdetail-content-container-row tourdetail-content-container-row-programme">
                               <Col lg={5}>
                               <h3>Lo que te recomendamos llevar</h3>
-                                    <ul>
+                                    <ul className="tourdetail-content-included-or-not">
                                           {
                                           specificTourContent.should_bring.map((content) => {
                                                 return(

@@ -75,7 +75,7 @@ html, body {
 }
 
 .tourdetail-content-container-row-programme li, .tourdetail-content-included li {
-      font-size: 0.9em;
+      font-size: 1em;
       margin: 5px 0;
       padding: 0;
 }
@@ -102,8 +102,16 @@ html, body {
 
 .tourdetail-content-container-ol {
       width: 100%;
+      margin-left: 0;
+      padding-left: 0;
 }
 
 .second-row, .third-row {
       padding-bottom: 40px;
 }
+
+.tourdetail-content-included-or-not {
+      margin-left: 0;
+      padding-left: 0;
+}
+

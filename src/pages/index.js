@@ -15,9 +15,8 @@ import Navigation from "../components/navigation/navigation.components";
 import Footer from "../components/footer/footer.component";
 import WhatsappIcon from '../components/whatsappIcon/whatsappIcon.component';
 
-//import "@popperjs/core/dist/umd/popper.min";
+import "@popperjs/core/dist/umd/popper.min";
 import "bootstrap/dist/css/bootstrap.min.css";
-//import "bootstrap/dist/js/bootstrap.min";
 
 const IndexPage = () => {
 
