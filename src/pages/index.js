@@ -31,10 +31,7 @@ const IndexPage = () => {
         <WhatsappIcon />
         <Container fluid className="homepage-main-cover-container">
           <div className="homepage-main-cover">
-            <div className="homepage-main-tagline">
-              <h1>MÁS DE <span>10 AÑOS</span><br />DE EXPERIENCIA</h1>
-              <h2>en el Salar de Uyuni</h2> 
-            </div>
+            
             <div className="homepage-main-footer">
               <a href="">
                 Descrube nuestros tours

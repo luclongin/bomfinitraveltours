@@ -1,29 +1,69 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Navigation from "../navigation/navigation.components";
 import { Helmet } from "react-helmet";
 import './tourdetail.styles.scss';
 import { Container, Row , Col} from "react-bootstrap";
-import tour1diaContent from "../../tours";
+import toursContent from "../../tours";
 import Footer from "../footer/footer.component";
 import ControlledCarousel from "../carousel/carousel.components";
 import WhatsappIcon from "../whatsappIcon/whatsappIcon.component";
 
-const TourDetail = ({tourname}) => {
+const TourDetail = ({specificTourContent, tourTitle}) => {
+
+      const returnActivityByProgramme = (programme, dayNumber) => {
+            if (typeof(programme) != "undefined" && programme != null) {
+                  return (                        
+                        <Col md={6} lg={6} className="programmeActivity-col">
+                        {dayNumber == 0 ? <h3></h3> : <h3>Día {dayNumber}</h3>}
+                              {programme.map((activity) => {
+                                    return(<li>{activity}</li>)
+                              })}
+                        </Col>
+                  );
+            }
+      }
+
+      const displayTourProgramme = (tourContent) => {
+            return(
+                  <Fragment>
+                        <Row className="programmeActivity-row">
+                              <Fragment>
+                                    {returnActivityByProgramme(tourContent.programme, 0)}
+                              </Fragment>
+                              </Row>
+                        <Row className="justify-content-md-center programmeActivity-row">
+                              <Fragment>
+                                    {returnActivityByProgramme(tourContent.programme_firstday, 1)}
+                              </Fragment>
+                              <Fragment>
+                                    {returnActivityByProgramme(tourContent.programme_secondday, 2)}
+                              </Fragment>
+                        </Row>
+                        <Row className="programmeActivity-row">
+                              <Fragment>
+                                    {returnActivityByProgramme(tourContent.programme_thirdday, 3)}
+                              </Fragment>
+                        </Row>
+                  </Fragment>
+            );
+      }
+
+
       return (
             <main>
                   <Helmet>
-                        <title>{tourname} | Bomfini Travel Tours</title>
+                        <title>{tourTitle} | Bomfini Travel Tours</title>
                         <link rel="preconnect" href="https://fonts.googleapis.com"/>
                         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
                         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet"/> 
                         <script src="https://kit.fontawesome.com/aa0fe87a05.js" crossorigin="anonymous"></script>
                   </Helmet>
-                  <Navigation tourname="Tour de 1 día" textColor="black"/>
+                  <Navigation tourname={tourTitle} textColor="black" />
                   <WhatsappIcon />
                   <Container fluid className="tourdetail-cover-container">
                         <Row className="tourdetail-title justify-content-md-center">
                               <Col className="tourdetail-title-col" xs md="4" lg="5">
-                                    <h1 className="text-center">Tour de 1 día</h1>
+                                    <h1 className="text-center">{tourTitle}</h1>
                                     <p className="text-center">Bomfini Travel Tours</p>
                               </Col>
                         </Row>
@@ -35,32 +75,27 @@ const TourDetail = ({tourname}) => {
                   </Container>
                   <Container className="tourdetail-content-container">
                         <Row className="tourdetail-content-container-row-programme tourdetail-content-container-row justify-content-md-center">  
-                              <Col className="d-flex justify-content-center">
-                                    <ol>
-                                    <h2 className="programadeldia">Programa del día</h2>
-                                          {tour1diaContent.programme.map((content) => {
-                                                return(
-                                                <li>
-                                                      {content}            
-                                                </li>
-                                                );
+                              <Col lg={10} className="d-flex">
+                                    <ol className="tourdetail-content-container-ol">
+                                    <h2 className="programadeldia">Programa {typeof(specificTourContent.programme) != "undefined" ? "del día" : "" }</h2>
+                                          {         
+                                                displayTourProgramme(specificTourContent)
                                           }
-                                          )}
                                     </ol>
                               </Col>
                         </Row>
-                        <Row className="tourdetail-content-container-row">
-                              <Col>
-                              <h2>Lo que ofrecemos</h2>
+                        <Row className="second-row justify-content-md-center tourdetail-content-container-row tourdetail-content-container-row-programme">
+                              <Col lg={5}>
+                              <h3>Lo que ofrecemos</h3>
                                     <ul className="tourdetail-content-included">
                                           <li className="noliststyle">
-                                                <span className="bold">Hora de salida:</span> {tour1diaContent.horarios.salida}
+                                                <span className="bold">Hora de salida:</span> {specificTourContent.horarios.salida}
                                           </li>
                                           <li className="noliststyle">
-                                                <span className="bold">Hora de regreso:</span> {tour1diaContent.horarios.regreso}
+                                                <span className="bold">Hora de regreso:</span> {specificTourContent.horarios.regreso}
                                           </li>
                                           {
-                                                tour1diaContent.included.map((content) => {
+                                                specificTourContent.included.map((content) => {
                                                       return(
                                                             <li>{content}</li>
                                                       );
@@ -68,17 +103,33 @@ const TourDetail = ({tourname}) => {
                                           }
                                     </ul>
                               </Col>
-                              <Col>
-                                          <h2>Lo que no incluye</h2>
-                                          <ul>
+                              <Col lg={5}>
+                                    <h3>Lo que no incluye</h3>
+                                    <ul>
+                                    {
+                                          specificTourContent.not_included.map((content) => {
+                                                return(
+                                                      <li>{content}</li>
+                                                );
+                                          })
+                                    }
+                                    </ul>
+                              </Col>
+                        </Row>
+                        <Row className="third-row justify-content-md-center tourdetail-content-container-row tourdetail-content-container-row-programme">
+                              <Col lg={5}>
+                              <h3>Lo que te recomendamos llevar</h3>
+                                    <ul>
                                           {
-                                                tour1diaContent.not_included.map((content) => {
-                                                      return(
-                                                            <li>{content}</li>
-                                                      );
-                                                })
+                                          specificTourContent.should_bring.map((content) => {
+                                                return(
+                                                      <li>{content}</li>
+                                                );
+                                          })
                                           }
-                                          </ul>
+                                    </ul>
+                              </Col>
+                              <Col lg={5}>
                               </Col>
                         </Row>
                   </Container>

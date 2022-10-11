@@ -2,12 +2,12 @@ import React from "react";
 import TourDetail from "../components/tourdetail/tourdetail.component";
 import tours from "../tours";
 
-const Tour1Dia = () => {
+const Tour3Dias = () => {
       return (
             <div>
-                  <TourDetail specificTourContent={tours.tour1dia} tourTitle="Tour de 1 día"/>
+                  <TourDetail specificTourContent={tours.tour3dias} tourTitle="Tour de 3 días"/>
             </div>
       );
 }
 
-export default Tour1Dia;
+export default Tour3Dias;
