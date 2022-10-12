@@ -131,6 +131,7 @@ const IndexPage = () => {
             <Col xs="auto" sm={6} md={6} lg={5} xl={5} xxl={5}>
               <TourCard
                 title="Tour privados"
+                titleOptional="Standard"
                 price="70"
                 description="Recomendado para parejas y familias que buscan una experiencia más cómoda, con horarios más flexibles. Se alojarán en hoteles de 3 estrellas adentro del Salar."
                 image={tourprivada}
