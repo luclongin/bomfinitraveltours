@@ -53,16 +53,16 @@ const IndexPage = () => {
       </div>
 
       <Container fluid className="homepage-presentation">
-        <Row className="justify-content-md-center homepage-presentation-row">
-          <Col className="homepage-presentation-text-container" xs="auto" sm={6} md={6} lg={5} xl={5} xxl={5}>
+        <Row className="align-items-center justify-content-md-center homepage-presentation-row">
+          <Col className="homepage-presentation-text-container" xs="auto" sm={6} md={6} lg={4} xl={4} xxl={4}>
             <h2>Bienvenidos al Salar de Uyuni</h2>
             <p className="homepage-presentation-text">
             Bomfini Travel Tours es una operadora de turismo localizada en Uyuni con más de 4 años de experiencia llevando turistas al depósito de sal más grande del mundo, con más de 12,000 km2 de sal, especies de cactus gigantes, lagunas de colores, formaciones de roca distinctas, volcanes piroclásticos, desiertos y depósitos glaciares. 
             </p>
-            <p>Verá uno de los atardeceres más espectaculares del mundo (más que todo durante la temporada de lluvia cuando no hay límite entre la tierra y el cielo), se divertirá con fotografías en diferente perspectiva y estará soprendido de los paisajes hermosos que tiene nuestro Salar.
+            <p>Verás uno de los atardeceres más espectaculares del mundo (más que todo durante la temporada de lluvia cuando no hay límite entre la tierra y el cielo), te divertirás con fotografías en diferente perspectiva y estarás soprendido de los paisajes hermosos que tiene nuestro Salar.
           </p>  
           </Col>
-          <Col className="homepage-presentation-img-col" xs="auto" sm={6} md={6} lg={6} xl={6} xxl={6}>
+          <Col className="align-items-center homepage-presentation-img-col" xs="auto" sm={6} md={6} lg={6} xl={6} xxl={6}>
             <img src={uyunipresentation} alt="Uyuni Presentation Image" />
           </Col>
         </Row>      
