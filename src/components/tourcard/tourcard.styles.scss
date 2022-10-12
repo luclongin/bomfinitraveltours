@@ -11,9 +11,17 @@
 }
 
 .tourcard-title {
-      padding: 10px 0 0 0;
+      padding: 0;
       font-size: 1.3em !important;
       font-family: 'Libre Baskerville', serif;
+}
+
+.tourcard-title-optional {
+      color: rgb(219, 46, 89);
+      font-size: 1em !important;
+      margin: 0;
+      padding: 0;
+      margin-top: -8px;
 }
 
 .tourcard-price {

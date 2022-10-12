@@ -48,6 +48,37 @@ html, body {
       right: 30px;
 }
 
+.homepage-presentation {
+      background-color: black;
+      color: white;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 0;
+      font-size: 1.05em;
+}
+
+.homepage-presentation-img-col {
+      height: 60vh;
+      padding: 50px;
+      background-color: black;
+}
+
+.homepage-presentation-img-col img {
+      height: 40vh;
+      width: auto;
+      margin: 0 auto;
+      display: block;
+}
+
+.homepage-presentation h2 {
+      font-family: 'Libre Baskerville', serif;
+      padding: 50px 0 30px 0;
+}
+
+
+
+
 .homepage-main-footer {
       position: absolute;
       bottom: 10px;

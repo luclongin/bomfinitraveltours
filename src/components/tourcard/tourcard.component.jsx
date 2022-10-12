@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import './tourcard.styles.scss';
 import { Link } from "gatsby";
 
-const TourCard = ({image, title, price, description, pagelink}) => {
+const TourCard = ({image, title, titleOptional, price, description, pagelink}) => {
       return (
             <Card className="tourcard-container">
                   <Card.Img className="img-fluid tourcard-image" src={image} alt="Tours 1 dia image"/>
@@ -14,7 +14,10 @@ const TourCard = ({image, title, price, description, pagelink}) => {
                               <span className="tourcard-price">
                                     De {price}$ USD
                               </span>
-                              </Card.Title>
+                        </Card.Title>
+                        <p className="tourcard-title-optional">
+                              {titleOptional}
+                        </p>
                         <Card.Text className="tourcard-description">{description}</Card.Text>
                   </Card.Body>
                   <Card.Footer className="tourcard-footer">
