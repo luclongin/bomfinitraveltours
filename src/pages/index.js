@@ -62,7 +62,7 @@ const IndexPage = () => {
               <TourCard
                 title="Tour de 1 día"
                 price="45"
-                description="Lorem ipsum dolor sit amet, te est populo consequuntur, qui facilisi instructior eu, quo ex modus singulis atomorum. Vim posse nostrum adolescens in. Ne sale legimus has, eum quod urbanitas assentior eu."
+                description="Visite el desierto de sal más grande del planeta en solo un día completo con un guía conductor experimentado. Incluye un delicioso almuerzo y oportunidades de fotos a cada paso."
                 image={tour1dia}
                 pagelink='tour1dia'
               />
@@ -71,7 +71,7 @@ const IndexPage = () => {
               <TourCard
                 title="Tour de 2 días"
                 price="95"
-                description="Lorem ipsum dolor sit amet, te est populo consequuntur, qui facilisi instructior eu, quo ex modus singulis atomorum. Vim posse nostrum adolescens in. Ne sale legimus has, eum quod urbanitas assentior eu."
+                description="Pasa una noche inolvidable en el Salar de Uyuni en un hotel de sal. Visitará los paisajes más representantes del Salar con sus lagunas Altiplánicas."
                 image={tour2dias}
                 pagelink='tour2dias'
               />
@@ -82,7 +82,7 @@ const IndexPage = () => {
               <TourCard
                 title="Tour de 3 días"
                 price="130"
-                description="Lorem ipsum dolor sit amet, te est populo consequuntur, qui facilisi instructior eu, quo ex modus singulis atomorum. Vim posse nostrum adolescens in. Ne sale legimus has, eum quod urbanitas assentior eu."
+                description="Disfrute de una completa excursión de 3 días por el salar de Uyuni con un guía experto, visitando absolutamente todo lo que ofrece el desierto de sal más grande del planeta."
                 image={tour3dias}
                 pagelink='tour3dias'
               />
@@ -91,7 +91,7 @@ const IndexPage = () => {
               <TourCard
                 title="Tour privados"
                 price="70"
-                description="Lorem ipsum dolor sit amet, te est populo consequuntur, qui facilisi instructior eu, quo ex modus singulis atomorum. Vim posse nostrum adolescens in. Ne sale legimus has, eum quod urbanitas assentior eu."
+                description="Recomendado para parejas y familias que buscan una experiencia más cómoda, con horarios más flexibles. Se alojarán en hoteles de 3 estrellas adentro del Salar."
                 image={tourprivada}
                 pagelink='privados'
               />
